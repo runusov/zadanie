@@ -1,0 +1,7 @@
+C:\Users\runusov2005\source\repos\Букварь\Букварь\bin\Debug\Букварь.exe.config
+C:\Users\runusov2005\source\repos\Букварь\Букварь\bin\Debug\Букварь.exe
+C:\Users\runusov2005\source\repos\Букварь\Букварь\bin\Debug\Букварь.pdb
+C:\Users\runusov2005\source\repos\Букварь\Букварь\obj\Debug\Букварь.csproj.AssemblyReference.cache
+C:\Users\runusov2005\source\repos\Букварь\Букварь\obj\Debug\Букварь.csproj.CoreCompileInputs.cache
+C:\Users\runusov2005\source\repos\Букварь\Букварь\obj\Debug\Букварь.exe
+C:\Users\runusov2005\source\repos\Букварь\Букварь\obj\Debug\Букварь.pdb
