@@ -1,0 +1,24 @@
+﻿<Window x:Class="varik5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:varik5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="850">
+    <Grid Background="SeaShell">
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,70,0,0" Name="fr" >Напиши стоимость одного кг яблок:</TextBlock>
+        <TextBox MouseDoubleClick="price_MouseDoubleClick" Height="30" Width="300" Margin="275,108,275,396" Name ="price" TextChanged="price_TextChanged"></TextBox>
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,161,0,0" >Напиши количество кг яблок, которое хочешь приобрести:</TextBlock>
+        <TextBox MouseDoubleClick="price_MouseDoubleClick" Height="30" Width="300"  Name ="kg" Margin="275,199,275,305"></TextBox>
+
+        <Button Background="RosyBrown" Height="40" Width="250" Margin="300,247,300,247" FontSize="25" Click="Button_Click">Посчитать</Button>
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,304,0,0">Вот и твоя цена:</TextBlock>
+        <TextBox Height="30" Width="300" Margin="275,340,275,114" Name ="otvet"></TextBox>
+
+        <Image VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="100" Source="C:\Users\runusov2005\source\repos\varik5\varik5\images\image.jpg" ></Image>
+        <TextBlock TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="25" Margin="0,0,0,97">Давай напиши <LineBreak></LineBreak> отрицательное <LineBreak></LineBreak> количество <LineBreak></LineBreak> или стоимость))))</TextBlock>
+    </Grid>
+</Window>
