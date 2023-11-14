@@ -1,0 +1,49 @@
+﻿<Window x:Class="мебелька.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:мебелька"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Azure">
+        <ListView HorizontalAlignment="Left" Width="635" Name="mebel" Background="Coral">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn  Width="100" Header="ФИО заказчика" DisplayMemberBinding="{Binding Path=[0]}"></GridViewColumn>
+                    <GridViewColumn Width="80" Header="Заказ" DisplayMemberBinding="{Binding Path= [1]}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Ширина мебели" DisplayMemberBinding="{Binding Path= [2]}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Длина мебели" DisplayMemberBinding="{Binding Path=[3]}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Предоплата" DisplayMemberBinding="{Binding Path=[4]}"></GridViewColumn>
+                    <GridViewColumn Width="150" Header="Полная стоимость" DisplayMemberBinding="{Binding Path=[5]}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+        <Canvas>
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center">ФИО заказчика:</TextBlock>
+            <TextBox x:Name="fio_tb" Width="120" Canvas.Left="650" Canvas.Top="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center" Canvas.Top="40">Заказ:</TextBlock>
+            <TextBox x:Name="name_tb" Width="120" Canvas.Left="650" Canvas.Top="60" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center" Canvas.Top="80">Ширина мебели:</TextBlock>
+            <TextBox x:Name="width_tb" Width="120" Canvas.Left="650" Canvas.Top="100" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center" Canvas.Top="120">Высота мебели:</TextBlock>
+            <TextBox x:Name="height_tb" Width="120" Canvas.Left="650" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center" Canvas.Top="160">Предоплата:</TextBlock>
+            <TextBox MouseDoubleClick="pred_tb_MouseDoubleClick" x:Name="pred_tb" Width="120" Canvas.Left="650" Canvas.Top="180" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Canvas.Left="650" VerticalAlignment="Center" Canvas.Top="200">Полная стоимость:</TextBlock>
+            <TextBox x:Name="price_tb" Width="120" Canvas.Left="650" Canvas.Top="220" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+            <CheckBox HorizontalAlignment="Left" Canvas.Left="650" Canvas.Top="250">Доставка</CheckBox>
+            <Button HorizontalAlignment="Left" Background="LemonChiffon" Height="30" Width="100" Click="Button_Click" Canvas.Left="650" Canvas.Top="280">Добавить заказ</Button>
+        </Canvas>
+
+    </Grid>
+</Window>
